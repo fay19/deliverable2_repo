@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 
 public class CoffeeMakerTest {
 	
-    // TEST GAME
+    // TEST GAME - HELLO!
 //	do something method in Game class
 	
 //	Test command S
