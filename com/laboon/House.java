@@ -1,3 +1,5 @@
+package com.laboon;
+
 public class House {
 
 	private int _numRooms = 6;
@@ -17,11 +19,10 @@ public class House {
 	}
 	
 	public String getCurrentRoomInfo() {
-		if (_currentRoom < 0){			
-			return "You cannot go south, you are at the southest room, enter N to go north";
-		}else if(_currentRoom >= _numRooms){
-			return "You cannot go north, you are at the northest room, enter S to go south";
-		}else {
+		if (_currentRoom < 0 || _currentRoom >= _numRooms) {
+			_currentRoom = 0;
+			return "You are in a magical land!  But you are returned to the beginning!";
+		} else {
 			return _rooms[_currentRoom].getDescription();
 		}
 	}
